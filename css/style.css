@@ -30,6 +30,9 @@ nav{
 .navbar-toggler:hover span{
 	background: #ffffff;
 }
+.navbar ul li a:hover{
+	color: #15a4fa;
+}
 .navbar-nav .nav-link {
     color: #2d3950;
     font-size: 16px;
@@ -329,5 +332,61 @@ footer ul li a:hover{
 		left: 90%;
 		transform: rotate(-200deg);		
 	}
+
+}
+
+@media(max-width: 1199px){
+    .about_section {
+    padding: 60px 0 60px;
+}
+}
+
+@media(max-width: 991px){
+    .service h2 {
+        text-shadow: 5px 3px 18px #0000003d;
+        font-size: 16px;
+}
+    .showcase ul li a { 
+        width: 30px;
+        height: 30px;
+        line-height: 30px;  
+        font-size: 12px;
+}
+    .banner_section .row {
+       min-height: 700px;
+}
+
+footer .container ul{
+        justify-content: center !important;
+}
+}
+
+@media (max-width: 575px){
+    .banner_section .row {
+        min-height: 500px;
+}
+
+    .banner_section h1 {
+        font-size: 90px;
+}
+
+    .service{
+        margin-bottom: 30px;
+}
+    .service span {
+        font-size: 40px;
+        width: 80px;
+        height: 80px; 
+        line-height: 80px; 
+}
+
+footer 
+    .container ul{
+        justify-content: center !important;
+    }
+footer p{
+	justify-content: center !important;
+	padding-bottom: 10px;
+} 
 
 }
