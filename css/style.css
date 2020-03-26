@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+.bg-color{
+	background-color: #f6f9f9;
+}
+nav{
+	padding-top: 25px !important;
+    padding-bottom: 25px !important;
+}
+.navbar-toggler{
+	border: 1px solid #15a4fa;
+	padding: 0 6px;
+	transition-duration: 0.4s;
+}
+.navbar-toggler span{
+	display: block;
+	width: 40px;
+	height: 4px;
+	background: #15a4fa;
+	margin: 6px 0;
+	transition-duration: 0.4s;
+}
+.navbar-toggler:hover{
+	background: #2d3950;
+	border: 1px solid #2d3950;
+}
+.navbar-toggler:hover span{
+	background: #ffffff;
+}
+.navbar-nav .nav-link {
+    color: #2d3950;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+.banner_section{
+	background-image: url(../images/banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.banner_section .row{
+	min-height: 800px;
+}
+.banner_section h1{
+	font-size: 120px;
+	font-weight: bold;
+	color: #ffffff;
+	margin: 0px;
+}
+.banner_section span{
+	width: 100%;
+	height: 2px;
+	background: #15a4fa;
+	display: block;
+	margin: 35px 0 40px;
+}
+.banner_section p{
+	font-size: 20px;
+	color: #ffffff;
+	margin: 40px 0 65px;
+}
+.banner_section button{
+	font-size: 18px;
+    padding: 12px 35px;
+    color: #ffffff;
+    border: 1px solid #15a4fa;
+    margin: 65px 0 180px;	
+}
+.banner_section button:hover{
+	background-color: #15a4fa;
+	color: #ffffff;
+}
+.banner_section a{
+	color: #ffffff;
+	display: block;
+	transform: translateY(-90px);
+	-webkit-transform: translateY(-90px);
+	-moz-transform: translateY(-90px);
+	animation-name: Move;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate; 
+}
+@keyframes Move{
+	0%{
+			transform: translateY(-90px);
+			-webkit-transform: translateY(-90px);
+			-moz-transform: translateY(-90px);
+	}
+	100%{
+			transform: translateY(-120px);
+			-webkit-transform: translateY(-120px);
+			-moz-transform: translateY(-120px);		
+	}
+}
+.about_section{
+	text-align: center;
+	padding: 80px 0 110px;
+}
+.about_section h1{
+	color: #2d3950;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+.about_section p{
+	color: #999999;
+	font-size: 20px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.service_section{
+	text-align: center;
+}
+.service{
+	padding: 65px 0 35px;
+}
+.service span{
+	font-size: 50px;
+	color: #ffffff;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+50,2989d8+50,48baff+50,5fc3ff+50 */
+	background: #48baff; /* Old browsers */
+	background: -moz-linear-gradient(left,  #48baff 50%, #2989d8 50%, #48baff 50%, #5fc3ff 50%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #48baff 50%,#2989d8 50%,#48baff 50%,#5fc3ff 50%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #48baff 50%,#2989d8 50%,#48baff 50%,#5fc3ff 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: auto;
+	border-radius: 3px;
+	line-height: 100px;
+	text-shadow: 0 1px 2px #999999;
+}
+.service span i{}
+.service h2{
+	color: #2d3950;
+	font-size: 22px;
+	margin: 32px 0 25px;
+}
+.service p{
+	color: #999999;
+	font-size: 15px;
+	max-width: 300px;
+	margin: auto;
+	padding-bottom: 70px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+}
+.showcase_section{
+	text-align: center;
+	padding: 80px 0 115px;
+}
+.img_fluid{
+	max-width: 100%;
+	height: auto;
+}
+.showcase_section h1{
+	color: #2d3950;
+	font-size: 41px;
+	margin-bottom: 25px;
+}
+.showcase_section p{
+	color: #909090;
+	font-size: 15px;
+	padding-bottom: 80px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.showcase{
+	position: relative;
+	margin-top: 30px;
+}
+.showcase img{}
+.showcase ul{
+	position: absolute;
+	right: 50%;
+	bottom: 40%;
+	transform: translate(50%, 40%);
+	transition-duration: 0.5s;
+	transition-delay: 0.1s;
+	opacity: 0;
+}
+.showcase:hover ul{
+	bottom: 50%;
+	transform: translate(50%, 50%);
+	opacity: 1;
+}
+.showcase ul li{
+	padding: 10px;
+}
+.showcase ul li a{
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	border-radius: 3px;
+}
+.showcase ul li a:hover{}
+.showcase::before{
+	content: "";
+	position: absolute;
+	background: #15a4fae3;
+	width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+	transition-duration: 0.4s;
+}
+.showcase:hover::before{
+	height: 100%;
+}
+.contact_section{
+	padding: 70px 0 110px;
+	background-image: url(../images/contact.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.contact_section::before{
+	content: "";
+	background: #2d3950;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+}
+.contact_section h1{
+	color: #ffffff;
+	font-size: 41px;
+	margin-bottom: 25px;
+}
+.contact_section p{
+	color: #999999;
+	font-size: 15px;
+	padding-bottom: 50px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.form-control {
+    padding: 35px 16px;
+    color: #999999;
+    background-color: #fff0;
+    border: 1px solid #999999;
+}
+label{
+	color: #ffffff;
+	padding-left: 15px;	
+	font-size: 15px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+form .btn{
+	font-size: 18px;
+    padding: 12px 35px;
+    color: #ffffff;
+    border: 1px solid #15a4fa;	
+}
+form .btn:hover{
+	background-color: #15a4fa;
+	color: #ffffff;
+}
+footer{
+	padding: 25px 0;
+}
+footer p{
+	font-size: 15px;
+    color: #999999;
+    margin: 0;
+}
+footer ul{}
+footer ul li{
+	padding-left: 5px;
+}
+footer ul li a{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: #15a4fa;
+	color: #ffffff;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 4px;
+	border: 1px solid #15a4fa;
+	transition-duration: 0.4s;
+}
+footer ul li a:hover{
+	background-color: transparent;
+}
+#coding{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 30px;
+	animation-name: coding;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	z-index: 9999;
+}
+@keyframes coding{
+	30%{
+		top: 40%;
+		left: 10%;
+		transform: rotate(200deg);		
+	}
+	50%{
+		top: 20%;
+		left: 40%;
+		transform: rotate(-100deg);		
+	}
+	80%{
+		top: 50%;
+		left: 80%;
+		transform: rotate(300deg);		
+	}
+	100%{
+		top: 10%;
+		left: 90%;
+		transform: rotate(-200deg);		
+	}
+
+}
